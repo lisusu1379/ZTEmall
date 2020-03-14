@@ -1,0 +1,26 @@
+@charset "UTF-8";
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select, figure, figcaption { margin: 0; padding: 0; }
+
+body, html { font: 14px "微软雅黑",Arial; }
+
+h1, h2, h3, h4, h5, h6, b, strong, i, em, u { font-weight: normal; font-style: normal; }
+
+a { text-decoration: none; }
+
+fieldset, img { border: none; }
+
+ol, ul, li { list-style: none; }
+
+input, textarea, button { outline: none; border: none; }
+
+input::-webkit-input-placeholder { color: #ccc; }
+
+input::-moz-input-lpaceholder { color: #ccc; }
+
+input::-ms-input-lpaceholder { color: #ccc; }
+
+img { vertical-align: middle; }
+
+.clearfix { *zoom: 1; }
+
+.clearfix:after { content: ''; display: block; height: 0; clear: both; visibility: hidden; overflow: hidden; }

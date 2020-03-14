@@ -1,0 +1,30 @@
+[{"title":"手机","childs":
+[{"phonename":"天机系列","img":"https://image.myzte.com/8c/05/01c9fd4f7d7e.jpg?27455_H480_W1920"},
+{"phonename":"Blade系列","img":"https://image.myzte.com/03/1c/173f97483d18.png?78235_H750_W750"},
+{"phonename":"远航系列","img":"https://image.myzte.com/b3/a3/a53719f59ad4.png?17669_H800_W800"},
+{"phonename":"其他手机","img":"https://image.myzte.com/15/9a/9b5232e00240.jpg?17736_H800_W800"}]},
+{"title":"智能终端","childs":
+[{"ITname":"便携投影","img":"https://image.myzte.com/45/90/96536abaafa8.jpg?39591_H800_W800"},
+{"ITname":"智能穿戴","img":"https://image.myzte.com/c4/30/37450cccf1f8.jpg?39614_H800_W800"},
+{"ITname":"网络盒子","img":"https://image.myzte.com/41/fb/f11422f22d99.jpg?39697_H800_W800"},
+{"ITname":"智能家居","img":"https://image.myzte.com/ec/2a/22cb1a263913.jpg?74072_H118_W118"}]},
+{"title":"耳机 / 音响","childs":
+[{"Eyname":"蓝牙耳机","img":"https://image.myzte.com/fb/9e/9ab595bbcb60.jpg?39849_H800_W800"},
+{"Eyname":"蓝牙音响","img":"https://image.myzte.com/07/0d/0f74ab6e6f8d.jpg?39875_H800_W800"},
+{"Eyname":"有线耳机","img":"https://image.myzte.com/2d/11/17dbec03b103.jpg?39898_H800_W800"}]},
+{"title":"数据线 / 电源适配器","childs":
+[{"Sdname":"充电器","img":"https://image.myzte.com/a7/6f/677579ae5950.jpg?39935_H800_W800"},
+{"Sdname":"数据线","img":"https://image.myzte.com/db/a5/a1b6aa25754e.jpg?40018_H800_W800"},
+{"Sdname":"车载充电","img":"https://image.myzte.com/f2/ae/ad28ac10488c.jpg?40064_H800_W800"}]},
+{"title":"保护套 / 后盖 / 贴膜","childs":
+[{"Bhtname":"皮套","img":"https://image.myzte.com/c2/87/8f2fe502a64a.jpg?40166_H800_W800"},
+{"Bhtname":"贴膜","img":"https://image.myzte.com/4b/ea/edbc02e5696e.jpg?40308_H800_W800"},
+{"Bhtname":"保护袋","img":"https://image.myzte.com/e8/39/358d5973b4b5.jpg?40343_H800_W800"},
+{"Bhtname":"Axon M专用配件","img":"https://image.myzte.com/c9/53/5f98c910af6b.jpg?27135_H235_W235"}]},
+{"title":"移动电源 / 存储卡","childs":
+[{"Ycname":"存储卡","img":"https://image.myzte.com/6a/d1/daaeac7ae7ff.jpg?40405_H800_W800"},
+{"Ycname":"读卡器","img":"https://image.myzte.com/6b/9c/9fb050739492.jpg?40451_H800_W800"},
+{"Ycname":"移动电源","img":"https://image.myzte.com/74/b3/b840e47df03e.jpg?40472_H800_W800"}]},
+{"title":"服务及周边","childs":
+[{"Szname":"车载支架","img":"https://image.myzte.com/36/8e/8c69cba2febb.jpg?40528_H800_W800"},
+{"Szname":"自拍杆","img":"https://image.myzte.com/b6/cd/c367cce3dacf.jpg?40554_H800_W800"}]}]
