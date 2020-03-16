@@ -113,7 +113,7 @@ img { vertical-align: middle; }
 
 .main .main-banner .mBanner-inner li { display: inline-block; width: 10px; height: 10px; margin: 1px; text-indent: -999px; cursor: pointer; background-color: rgba(0, 0, 0, 0); border: 1px solid #fff; border-radius: 100%; }
 
-.main .main-banner .mBanner-inner .active { background-color: red; }
+.main .main-banner .mBanner-inner .active { background-color: #fff; }
 
 .main .main-list { display: block; position: absolute; width: 250px; height: 480px; top: 125px; left: 0; margin-left: 100px; z-index: 10; background-color: rgba(248, 247, 247, 0.8); }
 
@@ -159,15 +159,21 @@ img { vertical-align: middle; }
 
 .main .main-product .main-name .p-banner .p-list { display: inline-block; float: left; }
 
-.main .main-product .main-name .p-banner .p-list .p-bannerqh { float: left; height: 92px; box-sizing: border-box; padding-bottom: 2px; margin-right: 23px; padding: 0 5px; border-bottom: 3px solid transparent; -webkit-transition: all 0.45s; -moz-transition: all 0.45s; -o-transition: all 0.45s; transition: all 0.45s; }
+.main .main-product .main-name .p-banner .p-list .active { border-bottom-color: #fc6628; }
 
-.main .main-product .main-name .p-banner .p-list .p-bannerqh active a { color: #fc6628; border-bottom-color: #fc6628; }
+.main .main-product .main-name .p-banner .p-list .active a { color: #fc6628; }
 
-.main .main-product .main-name .p-banner a { font-size: 16px; color: #767676; padding-top: 38px; }
+.main .main-product .main-name .p-banner .p-list .p-bannerqh { float: left; height: 92px; box-sizing: border-box; padding-bottom: 2px; margin-right: 23px; padding: 0px 8px; padding-top: 38px; border-bottom: 3px solid transparent; -webkit-transition: all 0.45s; -moz-transition: all 0.45s; -o-transition: all 0.45s; transition: all 0.45s; }
+
+.main .main-product .main-name a { font-size: 16px; color: #767676; }
 
 .main .main-goods { width: 1240px; margin: 0 auto; }
 
-.main .main-goods .main-goodsul { margin: 0 -5px; }
+.main .main-goods .content { display: none; }
+
+.main .main-goods .content .hide { display: block; }
+
+.main .main-goods .main-goodsul { position: relative; margin: 0 -5px; }
 
 .main .main-goods .main-goodsul .p-pleft { position: relative; z-index: 1; margin: 0 5px 10px 5px; overflow: hidden; float: left; }
 

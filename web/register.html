@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>注册页面</title>
         <link rel="stylesheet" href="../css/register.min.css">
+        <script src="../js/require.js" async = "true" defer data-main = "../js/main02"></script>
     </head>
     <body>
         <header>
@@ -46,22 +47,22 @@
                     <div class="welcome">欢迎注册</div>
                     <div class="register-input">
                         <div class="registeript">
-                            <input type="number" name="phone" class="phoneNum" placeholder="仅支持手机号">
+                            <input type="number" placeholder="仅支持手机号" name="number" required ng-minlength = "11" ng-maxlength = "11" ng-model="user.number" class="phoneNum" id="userphone">
                         </div>
                         <div class="registeript">
-                            <input type="password" name="" class="phoneNum" placeholder="登录密码">
+                            <input type="password" placeholder="登录密码" name="password" required ng-pattern="/[a-zA-Z0-9]/" ng-maxlength="18" ng-minlength="6" ng-model="user.password" class="phoneNum" id="password">
                         </div>
                         <div class="registeript">
-                            <input type="respassword" name="" class="phoneNum" placeholder="再次输入登录密码">
+                            <input type="password" placeholder="再次输入登录密码" name="password2" required ng-model="password2" class="phoneNum" id="respassword">
                         </div>
                         <div class="registeript">
-                            <input type="text" name="phone" class="phoneNum" style="width: 75%;" placeholder="验证码">
-                            <img src="#" alt="验证码" class="imgYzm">
-                            <button class="btn">更换验证码</button>
+                            <input type="text" placeholder="验证码" name="testcode" placeholder="验证码" class="phoneNum" id="useryzm" style="width: 75%;">
+                            <img src="#" id="vcode-img" alt="验证码" class="imgYzm">
+                            <button class="btn" ng-click="getTestCode()" ng-bind="description" ng-disabled="canClick">更换验证码</button>
                         </div>
                         <div class="registeript">
-                            <input type="text" name="" class="phoneNum" style="width: 75%;" placeholder="短信验证码">
-                            <button class="registerYzm">获取短信验证码</button>
+                            <input type="text" placeholder="短信验证码" name="testcode2" class="phoneNum" id="noteyzm" style="width: 75%;">
+                            <button class="registerYzm" type="button">获取短信验证码</button>
                         </div>
                         <div class="registerbox">
                             <label>

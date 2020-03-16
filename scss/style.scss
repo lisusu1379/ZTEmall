@@ -290,8 +290,8 @@
                 border-radius: 100%;
             }
             .active{
-                background-color: red;
-            }
+                background-color: #fff;
+            }    
         }
     }
     .main-list{
@@ -416,6 +416,12 @@
                 .p-list{
                     display: inline-block;
                     float: left;
+                    .active{
+                        border-bottom-color: #fc6628;
+                        a{
+                            color: #fc6628;
+                        }
+                    }
                     .p-bannerqh{
                         float: left;
                         height: 92px;
@@ -423,32 +429,37 @@
                         padding-bottom: 2px;
                         // text-align: center;
                         margin-right: 23px;
-                        padding: 0 5px;
+                        padding: 0px 8px;                    padding-top: 38px;
                         border-bottom: 3px solid transparent;
                         -webkit-transition: all 0.45s;
                         -moz-transition: all 0.45s;
                         -o-transition: all 0.45s;
                         transition: all 0.45s;
-                        active a{
-                            color: #fc6628;
-                            border-bottom-color: #fc6628;
+                        // .active{
+                        //     a{
+                        //         color: #fc6628;
+                        //     }
                         }
                     }
                 }
                 a{
                     font-size: 16px;
                     color: #767676;
-                    padding-top: 38px;
                     // display: inline-block;
                 }
             }
         }
-    }
     .main-goods{
         width: 1240px;
         margin: 0 auto;
+        .content{
+            display: none;
+            .hide{
+                display: block;
+            }
+        }
         .main-goodsul{
-            // position: relative;
+            position: relative;
             margin: 0 -5px;
             .p-pleft{
                 position: relative;
