@@ -18,71 +18,79 @@ define(["jquery"],function($){
         })
     }
 
-    /*
+    
     function bannerTab(){//首页轮播图效果
-        var aBtns = $("#banner").find(".carousel-inner li");
-        var oUl = $("#banner").find(".carousel-banner");
-        var timer = null;
-        var iNow = 0;//显示当前图片的下标
+        var $aBtns = $("#banner").find(".mBanner-inner li");//获取所有原点的li
+        var len = $aBtns.length - 1;
+        var _index = 0;//li的索引
+        var $img = $("#banner").find(".mBanner-picture  li");
 
-        aBtns.click(function(){//点击按钮的时候实现图片的切换
-            iNow = $(this).index() + 1;
+        var timer = null;
+        
+        $aBtns.hover(function(){
+            $(this).addClass("active");//指向li添加样式
+        },function(){
+            $(this).removeClass("active");//指向里删除样式
+        })
+
+
+
+        //点击事件
+        $aBtns.click(function(){
+            _index = $(this).index();
             teb();
         })
-        //自动轮播
-        timer = setInterval(function(){
-            iNow++;
-            teb();
-        },2000);
-        //当已知图片下标的时候
-        function teb(){
-            aBtns.removeClass("active").eq(iNow - 1).addClass("active");
-            if(iNow > 5){
-                aBtns.eq(0).addClass("active");
-            }
 
-            oUl.animate({left: -iNow * 1920},2000,function(){
-                if(iNow > 5){
-                    oUl.css("left", -1920);
-                    iNow = 1;
-                }
-                if(iNow < 1){
-                    oUl.css("left",5 * -1920);
-                    iNow = 5;
-                }
-            });
-        }
-        //移入移出
-        $("#banner").mouseenter(function(){
-            clearInterval(timer);
-        }).mouseleave(function(){
+        //自动轮播
+        function auto(){
             timer = setInterval(function(){
-                iNow++;
+                _index++;
+                if(inex > len){
+                    _index = 0;
+                }
                 teb();
-            },2000)
+            },2000);
+        }
+        auto();
+        //封装函数
+        function teb(){
+            //获取li的下标，改变样式
+            $aBtns.eq(_index).addClass("active").siblings().removeClass("active");
+            //获取图片的下标，实现淡入淡出
+            $img.eq(_index).fadeIn().siblings().dadeOut();
+        }
+
+
+
+        //淡入淡出
+        $(".main-banner").hover(function(){
+            clearInterval(timer);
+        },function(){
+            auto();
         })
     }
-    */
-
+    
+    /*
     //首页轮播图效果
     function bannerTab(){
         $.ajax({
             type: "get",
             url: "../data/banner.json",
-            success: function(result){
-                var bannerArr = result.banner;
-                for(var i =0; i < bannerArr.length; i++){
-                    $(`<a href="index.html"><img src="images/home page/banner01.jpg" alt=""></a>
-                    </li>`).appendTo(".mBanner-picture .item");
-                }
+            success: function(arr){
+                alert(arr);
+                // for(var i =0; i < arr.length; i++){
+                //     var node = $(`<a href="#${i}"><img src="${arr[i].img}" alt=""></a>`);
+                //     node.appendTo($(".mBanner-picture .item"));
+                // }
             },
             error: function(msg){
                 console.log(msg);
             }
         })
     }
+    */
 
-
+    /*
     //首页banner侧边列表页
     function bannerList(){
         $('.nav-list').on("mouseenter",".l-hover",function(){
@@ -92,10 +100,11 @@ define(["jquery"],function($){
             $(this).removeClass(".p-goods");
         })
     }
+    */
     return {
         shopCartmove:shopCartmove,
         bannerTab:bannerTab,
-        bannerList:bannerList
+        // bannerList:bannerList
     }
 })
 //debugger;

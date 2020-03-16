@@ -48,7 +48,7 @@
         }                   
     }
 }
-//登录表单
+//注册表单
 .main-container{
     width: 100%;
     background-color: #f9f9f9;
@@ -83,7 +83,7 @@
             height: 300px;
             background-color: gray;
         }
-        .main-login{
+        .main-register{
             height: 610px;
             box-sizing: border-box;
             display: inline-block;
@@ -96,43 +96,20 @@
             width: 332px;
             box-sizing: border-box;
             box-shadow: none;
-            .login-type{
-                list-style: none;
-                display: inline-block;
-                width: 100%;
-                border: none;
-                padding: 40px 0 20px 0;
-                margin-bottom: 10px;
-                border-bottom: 1px solid #ebebeb;
-                .li-type{
-                    display: block;
-                    float: left;
-                    width: 33.2%;
-                    height: 36px;
-                    text-align: center;
-                    font-size: 18px;
-                    line-height: 40px;
-                    a{
-                        color: #0186d1;
-                        display: block;
-                        width: 100%;
-                        height: 100%;
-                    }
-                    span{
-                        color: #ccc;
-                        float: left;
-                    }
-                }
-                .active{
-                    color: #767676;
-                    border-top: none;
-                    background-color: transparent;
-                    line-height: 40px;
-                }
+            .welcome{
+                height: 34px;
+                box-sizing: border-box;
+                background-color: transparent;
+                border-bottom: none;
+                text-align: center;
+                font-size: 24px;
+                margin-bottom: 20px;
+                padding: 0 15px;
+                color: #333;
+                font-size: 24px;
             }
-            .login-input{
-                margin-top: 10px;
-                .pZYinput{
+            .register-input{
+                .registeript{
                     width: 332px;
                     height: 40px;
                     position: relative;
@@ -151,18 +128,24 @@
                         border-radius: 2px;
                         box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
                     }
-                    .yzm{
+                    .imgYzm{
                         position: absolute;
                         top: 0px;
-                        right: 0;
+                        right: 84px;
+                        width: 80px;
                         height: 22px;
                         line-height: 22px;
-                        display: inline-block;
-                        width: 90px;
-                        margin: 9px;
-                        background-color: gainsboro;
+                        margin: 9px 9px;
+                        background-color: rosybrown;
                     }
-                    .loginYzm{
+                    .btn{
+                        padding: 9px 9px;
+                        font-size: 12px;
+                        line-height: 1.6;
+                        background-color: #f9f9f9;
+                        color: #767676;
+                    }
+                    .registerYzm{
                         position: absolute;
                         top: 0px;
                         right: 0px;
@@ -171,52 +154,52 @@
                         border: 1px solid #ccc;
                         border-top-right-radius: 2px;
                     }
-                    .btnlogin{
+                }
+                .registerbox{
+                    width: 332px;
+                    box-sizing: border-box;
+                    min-height: 27px;
+                    color: #333;
+                    font-size: 14px;
+                    position: relative;
+                    padding: 7px 15px 0 15px;
+                    label{
+                        width: 302px;
+                        min-height: 27px;
+                        font-weight: 400;
+                        cursor: pointer;
+                        input{
+                            position: absolute;
+                            margin: 4px 0px 0px;
+                        }
+                    }
+                }
+                .registerBtn{
+                    width: 332px;
+                    height: 40px;
+                    line-height: 40px;
+                    margin-top: 10px;
+                    margin-bottom: 12px;
+                    border-radius: 2px;
+                    background-color: #0186d1;
+                    border: none;
+                    text-align: center;
+                    .Btn{
                         width: 332px;
-                        height: 40px;
-                        border-radius: 2px;
+                        box-sizing: border-box;
+                        padding: 7px 10px;
                         background-color: #0186d1;
                         color: #fff;
                         font-size: 14px;
-                        border: none;
-                        padding: 6px 12px;
                     }
                 }
-            }
-            .wrap{
-                width: 332px;
-                padding: 0;
-                position: relative;
-                text-align: center;
-                .login-wrap{
-                    margin-bottom: 12px;
-                    .register-now{
-                        margin-right: 22px;
+                .register-wrap{
+                    width: 332px;
+                    height: 20px;
+                    line-height: 20px;
+                    text-align: center;
+                    a{
                         color: #177DCC;
-                    }
-                }
-                .login-id{
-                    .other-login{
-                        color: #787878;
-                        margin-top: 20px;
-                        margin-left: 8px;
-                    }
-                    .login-wwq{
-                        width: 293px;
-                        margin: auto;
-                        margin-top: 15px;
-                        margin-bottom: 20px;
-                        text-align: center;
-                        a{
-                            width: 36px;
-                            height: 36px;
-                            margin-right: 5px;
-                            margin-left: 5px;
-                            img{
-                                width: 36px;
-                                height: 36px;
-                            }
-                        }
                     }
                 }
             }

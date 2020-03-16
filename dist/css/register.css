@@ -51,43 +51,33 @@ img { vertical-align: middle; }
 
 .main-container .main-box .line { position: absolute; top: 75px; left: 450px; width: 1px; height: 300px; background-color: gray; }
 
-.main-container .main-box .main-login { height: 610px; box-sizing: border-box; display: inline-block; margin-left: 80px; float: left; margin-top: 40px; margin-bottom: 0; background-color: transparent; border: none; width: 332px; box-sizing: border-box; box-shadow: none; }
+.main-container .main-box .main-register { height: 610px; box-sizing: border-box; display: inline-block; margin-left: 80px; float: left; margin-top: 40px; margin-bottom: 0; background-color: transparent; border: none; width: 332px; box-sizing: border-box; box-shadow: none; }
 
-.main-container .main-box .main-login .login-type { list-style: none; display: inline-block; width: 100%; border: none; padding: 40px 0 20px 0; margin-bottom: 10px; border-bottom: 1px solid #ebebeb; }
+.main-container .main-box .main-register .welcome { height: 34px; box-sizing: border-box; background-color: transparent; border-bottom: none; text-align: center; font-size: 24px; margin-bottom: 20px; padding: 0 15px; color: #333; font-size: 24px; }
 
-.main-container .main-box .main-login .login-type .li-type { display: block; float: left; width: 33.2%; height: 36px; text-align: center; font-size: 18px; line-height: 40px; }
+.main-container .main-box .main-register .register-input .registeript { width: 332px; height: 40px; position: relative; margin-bottom: 12px; }
 
-.main-container .main-box .main-login .login-type .li-type a { color: #0186d1; display: block; width: 100%; height: 100%; }
+.main-container .main-box .main-register .register-input .registeript .phoneNum { width: 332px; height: 40px; box-sizing: border-box; padding: 6px 12px; font-size: 14px; line-height: 1.42857143; color: #555; background-color: #fff; background-image: none; border: 1px solid #ccc; border-radius: 2px; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
 
-.main-container .main-box .main-login .login-type .li-type span { color: #ccc; float: left; }
+.main-container .main-box .main-register .register-input .registeript .imgYzm { position: absolute; top: 0px; right: 84px; width: 80px; height: 22px; line-height: 22px; margin: 9px 9px; background-color: rosybrown; }
 
-.main-container .main-box .main-login .login-type .active { color: #767676; border-top: none; background-color: transparent; line-height: 40px; }
+.main-container .main-box .main-register .register-input .registeript .btn { padding: 9px 9px; font-size: 12px; line-height: 1.6; background-color: #f9f9f9; color: #767676; }
 
-.main-container .main-box .main-login .login-input { margin-top: 10px; }
+.main-container .main-box .main-register .register-input .registeript .registerYzm { position: absolute; top: 0px; right: 0px; padding: 9px 12px; font-size: 14px; border: 1px solid #ccc; border-top-right-radius: 2px; }
 
-.main-container .main-box .main-login .login-input .pZYinput { width: 332px; height: 40px; position: relative; margin-bottom: 12px; }
+.main-container .main-box .main-register .register-input .registerbox { width: 332px; box-sizing: border-box; min-height: 27px; color: #333; font-size: 14px; position: relative; padding: 7px 15px 0 15px; }
 
-.main-container .main-box .main-login .login-input .pZYinput .phoneNum { width: 332px; height: 40px; box-sizing: border-box; padding: 6px 12px; font-size: 14px; line-height: 1.42857143; color: #555; background-color: #fff; background-image: none; border: 1px solid #ccc; border-radius: 2px; box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+.main-container .main-box .main-register .register-input .registerbox label { width: 302px; min-height: 27px; font-weight: 400; cursor: pointer; }
 
-.main-container .main-box .main-login .login-input .pZYinput .yzm { position: absolute; top: 0px; right: 0; height: 22px; line-height: 22px; display: inline-block; width: 90px; margin: 9px; background-color: gainsboro; }
+.main-container .main-box .main-register .register-input .registerbox label input { position: absolute; margin: 4px 0px 0px; }
 
-.main-container .main-box .main-login .login-input .pZYinput .loginYzm { position: absolute; top: 0px; right: 0px; padding: 9px 12px; font-size: 14px; border: 1px solid #ccc; border-top-right-radius: 2px; }
+.main-container .main-box .main-register .register-input .registerBtn { width: 332px; height: 40px; line-height: 40px; margin-top: 10px; margin-bottom: 12px; border-radius: 2px; background-color: #0186d1; border: none; text-align: center; }
 
-.main-container .main-box .main-login .login-input .pZYinput .btnlogin { width: 332px; height: 40px; border-radius: 2px; background-color: #0186d1; color: #fff; font-size: 14px; border: none; padding: 6px 12px; }
+.main-container .main-box .main-register .register-input .registerBtn .Btn { width: 332px; box-sizing: border-box; padding: 7px 10px; background-color: #0186d1; color: #fff; font-size: 14px; }
 
-.main-container .main-box .main-login .wrap { width: 332px; padding: 0; position: relative; text-align: center; }
+.main-container .main-box .main-register .register-input .register-wrap { width: 332px; height: 20px; line-height: 20px; text-align: center; }
 
-.main-container .main-box .main-login .wrap .login-wrap { margin-bottom: 12px; }
-
-.main-container .main-box .main-login .wrap .login-wrap .register-now { margin-right: 22px; color: #177DCC; }
-
-.main-container .main-box .main-login .wrap .login-id .other-login { color: #787878; margin-top: 20px; margin-left: 8px; }
-
-.main-container .main-box .main-login .wrap .login-id .login-wwq { width: 293px; margin: auto; margin-top: 15px; margin-bottom: 20px; text-align: center; }
-
-.main-container .main-box .main-login .wrap .login-id .login-wwq a { width: 36px; height: 36px; margin-right: 5px; margin-left: 5px; }
-
-.main-container .main-box .main-login .wrap .login-id .login-wwq a img { width: 36px; height: 36px; }
+.main-container .main-box .main-register .register-input .register-wrap a { color: #177DCC; }
 
 .footer { width: 100%; background-color: #fff; }
 

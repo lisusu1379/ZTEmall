@@ -41,6 +41,7 @@ gulp.task("scssAll",function(){
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload());
 })
+//首页css
 gulp.task("scss1",function(){
     return gulp.src("scss/style.scss")
     .pipe(scss({outputStyle: 'compact'}).on('error',handleErrors))//用我们自己写的handleErrors代替处理错误
@@ -50,12 +51,23 @@ gulp.task("scss1",function(){
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload());
 })
+//登录页面css
 gulp.task("scss2",function(){
     return gulp.src("scss/login.scss")
     .pipe(scss({outputStyle: 'compact'}).on('error',handleErrors))//用我们自己写的handleErrors代替处理错误
     .pipe(gulp.dest("dist/css"))
     .pipe(minifyCSS())
     .pipe(rename("login.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
+//注册页面css
+gulp.task("scss3",function(){
+    return gulp.src("scss/register.scss")
+    .pipe(scss({outputStyle: 'compact'}).on('error',handleErrors))//用我们自己写的handleErrors代替处理错误
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifyCSS())
+    .pipe(rename("register.min.css"))
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload());
 })
@@ -73,7 +85,7 @@ gulp.task("scripts",function(){
     .pipe(connect.reload());
 })
 //一次执行多个任务
-gulp.task("build",["copyhtml","images","data","scssAll","scss1","scss2","scripts"],function(){
+gulp.task("build",["copyhtml","images","data","scssAll","scss1","scss3","scss2","scripts"],function(){
     console.log("项目建立成功");
 })
 
@@ -86,6 +98,7 @@ gulp.task("watch",function(){
     gulp.watch("scss/*.{sass,scss}",["scssAll"]);
     gulp.watch("scss/style.scss",["scss1"]);
     gulp.watch("scss/login.scss",["scss2"]);
+    gulp.watch("scss/register.scss",["scss3"]);
     gulp.watch(["js/*.js","!gulpfile.js"],["scripts"]);
     
 })
