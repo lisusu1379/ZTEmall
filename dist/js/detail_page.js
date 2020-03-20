@@ -5,7 +5,7 @@
 * author:lisusu
 * Date: 2020-03-17
 */
-define(["jquery","jquery-zoom"],function($){
+define(["jquery"],function($){
 
     //logonavsearch部分a划过颜色改变
     function hovernav(){
@@ -98,8 +98,10 @@ define(["jquery","jquery-zoom"],function($){
         setTimeout(show_time,1000);
 
     }
-            //图片切换
-    function tab2(){
+    //图片切换
+    /*
+    //有所bug切换放大有问题
+    function fdj2(){
         var enter_timer = 0;
         $('.main-imgs a').on('mouseenter',function(e,tout){
             var oli = $(this).closest('li'),middle_src = $(this).attr('data-middlesrc'),big_src=$(this).prop('href');
@@ -118,17 +120,65 @@ define(["jquery","jquery-zoom"],function($){
             return false;
         });
         $('.main-tltop a').parent().zoom({url:$('.main-tltop a').prop('href')});
-
-        // $("main-imgs>li").mouseenter(function(){
-        //     var index = $(this).index();
-        //     $(".main-imgs>li").eq(index).children("a").find("img").css("borderColor","#fc6628");
-        // });            
-        // $(".main-imgs>li").mouseleave(function(){
-        //     var index = $(this).index();
-        //     $(".main-list>li").children("a").find("img").css("backgroundColor","");
-        // })
     }
-                
+    */
+   function fdj(){
+        //hover过小图片的切换
+        $('#imgs li img').hover(function () {
+            $('#small img').attr('src',this.src);
+            $('#bigimg img').attr('src',$('#small img')[0].src);
+        });
+
+        $('#imgs li img').hover(function(ev){
+            var e = ev || window.event;
+            var target = e.target || window.event.srcElement;
+            if(target.tarName == "img"){
+                for(var i = 0; i < childs.length; i++){
+                    childs[i].className = "";
+                }
+                target.parentNode.className = "hover";
+                _this.imgs.firstElementChild.li.a.src = target.src;
+                _this.bigimg.src = target.src;
+            }
+        });
+        //放大效果
+       $("#small").mouseenter(function(){
+           $("#bigimg,#mark").show();
+       }).mouseleave(function(){
+           $("#bigimg,#mark").hide();
+       }).mousemove(function(ev){
+            var l = ev.pageX - $("#small").offset().left - 50;
+            var t = ev.pageY - $("#small").offset().top - 50;
+            //限制出界
+            l = range(l, 0, 300);
+            t = range(t, 0 ,300);
+
+            $("#mark").css({
+                left: l,
+                top: t
+            });
+            //放大图片
+            $("#bigimg img").css({
+                left: -2 * l,
+                top: -2 * t
+            })
+        })
+
+
+
+        function range(iCur, iMin, iMax){
+            if(iCur < iMin){
+                return iMin;
+            }else if(iCur > iMax){
+                return iMax;
+            }else{
+                return iCur;
+            }
+        }
+        return this;
+   }
+
+             
 
 
     return {
@@ -136,6 +186,8 @@ define(["jquery","jquery-zoom"],function($){
         axonBlade:axonBlade,
         tab:tab,
         show_time:show_time,
-        tab2:tab2,
+        fdj:fdj,
+        // fdj2:fdj2,
+        // range:range,
     }
 })

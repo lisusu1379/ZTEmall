@@ -11,8 +11,9 @@ console.log("加载成功");
 require.config({
     paths: {
         "jquery": "jquery-1.11.3",
+        // "jquery":"jquery-1.10.1.min",
         "detail_page": "detail_page",
-        "jquery-zoom": "https://cdn.bootcss.com/jquery-zoom/1.7.21/jquery.zoom",
+        // "jquery-zoom": "https://cdn.bootcss.com/jquery-zoom/1.7.21/jquery.zoom",//使用需在js页面加入"jquery-zoom"
     }
 })
 
@@ -23,6 +24,7 @@ require(["detail_page"],function(detail_page){
     detail_page.axonBlade();
     detail_page.tab();
     detail_page.show_time();
-    detail_page.tab2();
-      
+    detail_page.fdj();
+    // detail_page.fdj2();
+    // detail_page.range();      
 })
