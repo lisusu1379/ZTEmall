@@ -71,6 +71,16 @@ gulp.task("scss3",function(){
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload());
 })
+//详情页css
+gulp.task("scss4",function(){
+    return gulp.src("scss/detail_page.scss")
+    .pipe(scss({outputStyle: 'compact'}).on('error',handleErrors))//用我们自己写的handleErrors代替处理错误
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifyCSS())
+    .pipe(rename("detail_page.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+})
 //打包压缩合并文件
 // const concat = require("gulp-concat");
 // const uglify = require("gulp-uglify");
@@ -85,7 +95,7 @@ gulp.task("scripts",function(){
     .pipe(connect.reload());
 })
 //一次执行多个任务
-gulp.task("build",["copyhtml","images","data","scssAll","scss1","scss3","scss2","scripts"],function(){
+gulp.task("build",["copyhtml","images","data","scssAll","scss1","scss3","scss2","scss4","scripts"],function(){
     console.log("项目建立成功");
 })
 
@@ -99,6 +109,7 @@ gulp.task("watch",function(){
     gulp.watch("scss/style.scss",["scss1"]);
     gulp.watch("scss/login.scss",["scss2"]);
     gulp.watch("scss/register.scss",["scss3"]);
+    gulp.watch("scss/detail_page.scss",["scss4"]);
     gulp.watch(["js/*.js","!gulpfile.js"],["scripts"]);
     
 })

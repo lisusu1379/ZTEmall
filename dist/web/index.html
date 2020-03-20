@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>首页</title>
         <link rel="stylesheet" href="../css/style.min.css">
-        <script src="../js/require.js" async = "true" defer data-main = "../js/main"></script>
+        <script src="../js/require.js" async = "true" defer data-main = "../js/index.main"></script>
     </head>
     <body>
         <header>
@@ -45,18 +45,16 @@
             <div class="lNS">
                 <div class="logo"><a href="index.html"><img src="../images/logo/ZTE-logo.png" alt=""></a></div>
                 <ul class="nav clearfix">
-                    <li class="nav-li">
-                        <a href="index.html">首页</a>
-                    </li>
-                    <li class="nav-li" id="navli-Axon">
-                        <a href="#">Axon系列</a>
-                        <div class="nav-Alist">
+                    <li class="nav-li"><a href="index.html">首页</a></li>
+                    <li class="nav-li" id="navliAxonBlade1">
+                        <a href="#" class="navmove">Axon系列</a>
+                        <div class="nav-Alist navtab" id="navtab1">
                             <div class="navlist-Axon">
                                 <ul class="nav-Aul clearfix">
-                                    <li class="nav-li">
+                                    <li class="nav-lis">
                                         <a href="#" target="_blank">
                                             <div class="goods-img">
-                                                <img src="../images/banner.nav/headset01.jpg" alt="">
+                                                <img src="../images/nav/1.jpg" alt="">
                                             </div>
                                             <div class="goods-data">
                                                 <div class="goods-name">
@@ -69,7 +67,7 @@
                                         </a>
                                     </li>
                                     <li class="line"></li>
-                                    <li class="nav-li">
+                                    <li class="nav-lis">
                                         <a href="#" target="_blank">
                                             <div class="goods-img">
                                                 <img src="../images/nav/2.jpg" alt="">
@@ -89,12 +87,12 @@
                             </div>
                         </div>
                     </li>
-                    <li class="nav-li" id="navli-Blade">
+                    <li class="nav-li" id="navliAxonBlade2">
                         <a href="#">Blade系列</a>
-                        <div class="nav-Aconceal" style="display: none;height: 228px;padding-top: 0px;padding-bottom: 0px;margin-top: 0px;margin-bottom: 0px;">
+                        <div class="nav-Aconceal navtab" id="navtab2">
                             <div class="list-Aconceal">
                                 <ul class="list-Anav clearfix">
-                                    <li class="nav-li">
+                                    <li class="nav-lis">
                                         <a href="#" target="_blank">
                                             <div class="goods-img">
                                                 <img src="../images/nav/3.jpg" alt="">
@@ -111,7 +109,7 @@
                                         </a>
                                     </li>
                                     <li class="line"></li>
-                                    <li class="nav-li">
+                                    <li class="nav-lis">
                                         <a href="#" target="_blank">
                                             <div class="goods-img" style="border-left: none;">
                                                 <img src="../images/nav/4.jpg" alt="">
@@ -128,7 +126,7 @@
                                         </a>
                                     </li>
                                     <li class="line"></li>
-                                    <li class="nav-li">
+                                    <li class="nav-lis">
                                         <a href="#" target="_blank">
                                             <div class="goods-img">
                                                 <img src="../images/nav/5.jpg" alt="">
@@ -145,7 +143,7 @@
                                         </a>
                                     </li>
                                     <li class="line"></li>
-                                    <li class="nav-li">
+                                    <li class="nav-lis">
                                         <a href="#" target="_blank">
                                             <div class="goods-img">
                                                 <img src="../images/nav/2.jpg" alt="">
@@ -162,7 +160,7 @@
                                         </a>
                                     </li>
                                     <li class="line"></li>
-                                    <li class="nav-li">
+                                    <li class="nav-lis">
                                         <a href="#" target="_blank">
                                             <div class="goods-img">
                                                 <img src="../images/nav/6.jpg" alt="">
@@ -182,15 +180,9 @@
                             </div>
                         </div>
                     </li>
-                    <li class="nav-li">
-                        <a href="index.html">Nubia</a>
-                    </li>
-                    <li class="nav-li">
-                        <a href="index.html">服务</a>
-                    </li>
-                    <li class="nav-li">
-                        <a href="index.html">中兴社区</a>
-                    </li>
+                    <li class="nav-li"><a href="index.html">Nubia</a></li>
+                    <li class="nav-li"><a href="index.html">服务</a></li>
+                    <li class="nav-li"><a href="index.html">中兴社区</a></li>
                 </ul>
                 <div class="search">
                     <div class="search-input">
@@ -209,7 +201,7 @@
             <div class="main">
                 <div class="main-banner" id="banner">
                     <ul class="mBanner-picture clearfix">
-                       <li class="item">
+                        <li class="item">
                             <a href="index.html"><img src="../images/home page/banner01.jpg" alt=""></a>
                         </li> 
                         <li class="item">
@@ -223,7 +215,7 @@
                         </li>
                         <li class="item">
                             <a href="index.html"><img src="../images/home page/banner05.jpg" alt=""></a> 
-                        </li> -->
+                        </li>  
                     </ul>
                     <ol class="mBanner-inner">
                         <li></li>
@@ -233,7 +225,7 @@
                         <li></li>
                     </ol>
                 </div>
-                    <ul class="main-list clearfix">
+                <ul class="main-list clearfix">
                     <li class="m-hover">
                         <h4><a href="index.html">手机</a></h4>
                         <ul class="phone clearfix">
@@ -600,7 +592,7 @@
                         <li class="p-pleft">
                             <div class="page-img">
                                 <a href="index.html">
-                                    <div class="page-goodsimg"><img src="../images/home page/first page10.jpg" alt=""></div>
+                                    <div class="page-goodsimg"><img src="../images/home page/first page12.jpg" alt=""></div>
                                     <div class="page-goodsmiaoshu">
                                         <div class="page-h4"><h4>ZTE中兴 4G全网通随身wifi MF920U5 </h4></div>
                                         <div class="page-h5"><h5>4G全网通无线wifi</h5></div>
@@ -612,7 +604,7 @@
                         <li class="p-pleft">
                             <div class="page-img">
                                 <a href="index.html">
-                                    <div class="page-goodsimg"><img src="../images/home page/first page10.jpg" alt=""></div>
+                                    <div class="page-goodsimg"><img src="../images/home page/first page13.jpg" alt=""></div>
                                     <div class="page-goodsmiaoshu">
                                         <div class="page-h4"><h4>ZTE中兴 4G室内无线路由器  4GCPE  MF283U</h4></div>
                                         <div class="page-span"><span>￥<strong>399</strong></span></div>
@@ -632,20 +624,20 @@
                         </div>
                         <div class="p-banner">
                             <ul class="p-list clearfix">
-                                <li class="p-bannerqh"><a href="index.html">壳膜套</a></li>
-                                <li class="p-bannerqh"><a href="index.html">充电宝</a></li>
-                                <li class="p-bannerqh"><a href="index.html">耳机</a></li>
+                                <li class="p-bannerqh active" id="tab1"><a href="index.html">壳膜套</a></li>
+                                <li class="p-bannerqh" id="tab2"><a href="index.html">充电宝</a></li>
+                                <li class="p-bannerqh" id="tab3"><a href="index.html">耳机</a></li>
                             </ul>
                             <a href="index.html"><span>更多</span><img src="../images/home page/look-all.png" alt=""></a>
                         </div>
                     </div>
                 </div>
                 <div class="main-goods main-tab">
-                    <ul class="main-goodsul  content clearfix" style="display: block;">
+                    <ul class="main-goodsul  content clearfix" id="content1" style="display: block;">
                         <li class="p-pleft">
                             <div class="page-img">
                                 <a href="index.html">
-                                    <div class="page-goodsimg"><img src="../images/home page/first page10.jpg" alt=""></div>
+                                    <div class="page-goodsimg"><img src="../images/home page/first page14.jpg" alt=""></div>
                                     <div class="page-goodsmiaoshu">
                                         <div class="page-h4"><h4>小球音箱 S201</h4></div>
                                         <div class="page-h5"><h5></h5></div>
@@ -657,7 +649,7 @@
                         <li class="p-pleft">
                             <div class="page-img">
                                 <a href="index.html">
-                                    <div class="page-goodsimg"><img src="../images/home page/first page11.png" alt=""></div>
+                                    <div class="page-goodsimg"><img src="../images/home page/first page15.png" alt=""></div>
                                     <div class="page-goodsmiaoshu">
                                         <div class="page-h4"><h4>竹韵耳机 SOH3506</h4></div>
                                         <div class="page-h5"><h5></h5></div>
@@ -669,7 +661,7 @@
                         <li class="p-pleft">
                             <div class="page-img">
                                 <a href="index.html">
-                                    <div class="page-goodsimg"><img src="../images/home page/first page10.jpg" alt=""></div>
+                                    <div class="page-goodsimg"><img src="../images/home page/first page16.jpg" alt=""></div>
                                     <div class="page-goodsmiaoshu">
                                         <div class="page-h4"><h4>线控耳机 SOH3516</h4></div>
                                         <div class="page-h5"><h5></h5></div>
@@ -681,7 +673,7 @@
                         <li class="p-pleft">
                             <div class="page-img">
                                 <a href="index.html">
-                                    <div class="page-goodsimg"><img src="../images/home page/first page10.jpg" alt=""></div>
+                                    <div class="page-goodsimg"><img src="../images/home page/first page17.jpg" alt=""></div>
                                     <div class="page-goodsmiaoshu">
                                         <div class="page-h4"><h4>线控耳机 SOH3513（美标 CTIA）</h4></div>
                                         <div class="pahe-h5"><h5></h5></div>
@@ -691,11 +683,11 @@
                             </div>
                         </li>
                     </ul>
-                    <ul class="main-goodsul  content clearfix">
+                    <ul class="main-goodsul  content clearfix" id="content2">
                         <li class="p-pleft">
                             <div class="page-img">
                                 <a href="index.html">
-                                    <div class="page-goodsimg"><img src="../images/home page/first page10.jpg" alt=""></div>
+                                    <div class="page-goodsimg"><img src="../images/home page/first-page18.jpg" alt=""></div>
                                     <div class="page-goodsmiaoshu">
                                         <div class="page-h4"><h4>5000mAh移动电源 P60 </h4></div>
                                         <div class="page-h5"><h5></h5></div>
@@ -707,7 +699,7 @@
                         <li class="p-pleft">
                             <div class="page-img">
                                 <a href="index.html">
-                                    <div class="page-goodsimg"><img src="../images/home page/first page11.png" alt=""></div>
+                                    <div class="page-goodsimg"><img src="../images/home page/first-page19.jpg" alt=""></div>
                                     <div class="page-goodsmiaoshu">
                                         <div class="page-h4"><h4>5000mAh移动电源  P42 轻薄金属机身</h4></div>
                                         <div class="page-h5"><h5></h5></div>
@@ -719,7 +711,7 @@
                         <li class="p-pleft">
                             <div class="page-img">
                                 <a href="index.html">
-                                    <div class="page-goodsimg"><img src="../images/home page/first page10.jpg" alt=""></div>
+                                    <div class="page-goodsimg"><img src="../images/home page/first-page20.jpg" alt=""></div>
                                     <div class="page-goodsmiaoshu">
                                         <div class="page-h4"><h4>5000mAh移动电源  P42 轻薄金属机身</h4></div>
                                         <div class="page-h5"><h5></h5></div>
@@ -731,7 +723,7 @@
                         <li class="p-pleft">
                             <div class="page-img">
                                 <a href="index.html">
-                                    <div class="page-goodsimg"><img src="../images/home page/first page10.jpg" alt=""></div>
+                                    <div class="page-goodsimg"><img src="../images/home page/first-page21.jpg" alt=""></div>
                                     <div class="page-goodsmiaoshu">
                                         <div class="page-h4"><h4>线控耳机 SOH3513（美标 CTIA）</h4></div>
                                         <div class="pahe-h5"><h5></h5></div>
@@ -741,11 +733,11 @@
                             </div>
                         </li>
                     </ul>
-                    <ul class="main-goodsul  content clearfix">
+                    <ul class="main-goodsul  content clearfix" id="content3">
                         <li class="p-pleft">
                             <div class="page-img">
                                 <a href="index.html">
-                                    <div class="page-goodsimg"><img src="../images/home page/first page10.jpg" alt=""></div>
+                                    <div class="page-goodsimg"><img src="../images/home page/first-page22.jpg" alt=""></div>
                                     <div class="page-goodsmiaoshu">
                                         <div class="page-h4"><h4>ZTE中兴 天机AXON 10 Pro 无线充电座</h4></div>
                                         <div class="page-h5"><h5></h5></div>
@@ -757,7 +749,7 @@
                         <li class="p-pleft">
                             <div class="page-img">
                                 <a href="index.html">
-                                    <div class="page-goodsimg"><img src="../images/home page/first page11.png" alt=""></div>
+                                    <div class="page-goodsimg"><img src="../images/home page/first-page23.jpg" alt=""></div>
                                     <div class="page-goodsmiaoshu">
                                         <div class="page-h4"><h4>ZTE中兴  智能手机 扩展坞</h4></div>
                                         <div class="page-h5"><h5></h5></div>
@@ -769,7 +761,7 @@
                         <li class="p-pleft">
                             <div class="page-img">
                                 <a href="index.html">
-                                    <div class="page-goodsimg"><img src="../images/home page/first page10.jpg" alt=""></div>
+                                    <div class="page-goodsimg"><img src="../images/home page/first-page24.png" alt=""></div>
                                     <div class="page-goodsmiaoshu">
                                         <div class="page-h4"><h4>ZTE中兴 天机Axon 10 Pro 智能保护套</h4></div>
                                         <div class="page-h5"><h5></h5></div>
@@ -781,7 +773,7 @@
                         <li class="p-pleft">
                             <div class="page-img">
                                 <a href="index.html">
-                                    <div class="page-goodsimg"><img src="../images/home page/first page10.jpg" alt=""></div>
+                                    <div class="page-goodsimg"><img src="../images/home page/first-page25.jpg" alt=""></div>
                                     <div class="page-goodsmiaoshu">
                                         <div class="page-h4"><h4> ZTE中兴 Blade A7 TPU保护套套装</h4></div>
                                         <div class="pahe-h5"><h5></h5></div>
@@ -791,7 +783,6 @@
                             </div>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </div>
@@ -876,7 +867,7 @@
                         </div>    
                     </div>
                 </div>
-                <div class="footer-botton">
+                <div class="footer-bottom">
                     <ul class="fb-ul">
                         <li><a href="index.html">中兴社区</a></li>
                         <!-- <li class="line2"></li> -->

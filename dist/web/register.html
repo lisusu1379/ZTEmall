@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>注册页面</title>
         <link rel="stylesheet" href="../css/register.min.css">
-        <script src="../js/require.js" async = "true" defer data-main = "../js/main02"></script>
+        <script src="../js/require.js" async = "true" defer data-main = "../js/register.main"></script>
     </head>
     <body>
         <header>
@@ -47,22 +47,27 @@
                     <div class="welcome">欢迎注册</div>
                     <div class="register-input">
                         <div class="registeript">
-                            <input type="number" placeholder="仅支持手机号" name="number" required ng-minlength = "11" ng-maxlength = "11" ng-model="user.number" class="phoneNum" id="userphone">
+                            <input type="number" placeholder="仅支持手机号" name="number" required minlength = "11" maxlength = "11" class="phoneNum" id="userphone">
                         </div>
                         <div class="registeript">
-                            <input type="password" placeholder="登录密码" name="password" required ng-pattern="/[a-zA-Z0-9]/" ng-maxlength="18" ng-minlength="6" ng-model="user.password" class="phoneNum" id="password">
+                            <input type="password" placeholder="登录密码" name="password" required pattern="/[a-zA-Z0-9]/" maxlength="18" minlength="6" class="phoneNum" id="password">
                         </div>
                         <div class="registeript">
-                            <input type="password" placeholder="再次输入登录密码" name="password2" required ng-model="password2" class="phoneNum" id="respassword">
+                            <input type="password" placeholder="再次输入登录密码" name="password2" required class="phoneNum" id="respassword">
                         </div>
-                        <div class="registeript">
-                            <input type="text" placeholder="验证码" name="testcode" placeholder="验证码" class="phoneNum" id="useryzm" style="width: 75%;">
-                            <img src="#" id="vcode-img" alt="验证码" class="imgYzm">
-                            <button class="btn" ng-click="getTestCode()" ng-bind="description" ng-disabled="canClick">更换验证码</button>
+                        <div class="registeript" style="position: relative;">
+                            <input type="type" placeholder="验证码" name="testcode" maxlength="4" class="phoneNum" id="useryzm" style="width: 75%;">
+                            <img src="" id="vcode-img" alt="验证码" class="imgYzm">
+                            <button class="btn">更换验证码</button>
                         </div>
-                        <div class="registeript">
-                            <input type="text" placeholder="短信验证码" name="testcode2" class="phoneNum" id="noteyzm" style="width: 75%;">
-                            <button class="registerYzm" type="button">获取短信验证码</button>
+                        <div class="registeript" style="position: relative;">
+                            <input type="number" placeholder="短信验证码" name="testcode2" maxlength="6" class="phoneNum" id="noteyzm" style="width: 63%;">
+                            <button class="registerYzm" id="getmcode" type="button">获取短信验证码</button>
+                        </div>
+                        <div class="register-reminder" style="display: none;">
+                            <img class="danger" src="../images/login-register/danger01.jpg" alt="">
+                            <img class="registerimg" src="../images/login-register/danger02.jpg" alt="">
+                            <span>请填写此字段。</span>
                         </div>
                         <div class="registerbox">
                             <label>
@@ -71,7 +76,10 @@
                             </label>
                         </div>
                         <div class="registerBtn">
-                            <button type="submit" class="Btn">立即注册</button>
+                            <button type="submit" class="Btn" id="submiregister">立即注册</button>
+                        </div>
+                        <div class="msginfo" style="display: block;">
+                        
                         </div>
                         <div class="register-wrap">
                             已有账号? <a href="login.html">立即登录</a>

@@ -118,6 +118,9 @@
                     .navlist-Axon{
                         width: 1230px;
                         margin: auto;
+                        .navmove{
+                            position: relative;
+                        }
                         .nav-Aul{
                             margin-bottom: 0;
                             overflow: hidden;
@@ -187,6 +190,91 @@
                             }
                         }
                     }
+                }
+                .nav-Aconceal{
+                    position: absolute;
+                    display: none;
+                    top: 60px;
+                    left: 0;
+                    width: 100%;
+                    min-height: 228px;
+                    z-index: 13;
+                    padding: 0px;
+                    margin: 0px;
+                    background-color: #ffffff;
+                    .list-Aconceal{
+                        width: 1230px;
+                        margin: auto;
+                        .list-Anav{
+                            margin-bottom: 0;
+                            overflow: hidden;
+                            li{
+                                width: 205px;
+                                float: left;
+                                height: 228px;
+                                margin: 0;
+                                overflow: hidden;
+                                // position: relative;
+                            }
+                            .line{
+                                margin: 15px;
+                                height: 145px; 
+                                width: 1px;
+                                background-color: #ccc;
+                            }
+                            .goods-img{
+                                margin-top: 20px;
+                                width: 204px;
+                                height: 140px;
+                                line-height: 140px;
+                                text-align: center;
+                                border-left: none;
+                                img{
+                                    max-width: 100%;
+                                    max-height: 100%;
+                                    // -webkit-transition: all 0.45s;
+                                    // -moz-transition: all 0.45s;
+                                    // -o-transition: all 0.45s;
+                                    // transition: all 0.45s;
+                                }
+                            }
+                            .goods-data{
+                                margin-top: 10px;
+                                padding-bottom: 8px;
+                                // -webkit-transition: all 0.45s;
+                                // -moz-transition: all 0.45s;
+                                // -o-transition: all 0.45s;
+                                // transition: all 0.45s;
+                                .goods-name{
+                                    text-align: center;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    padding: 0 10px;
+                                    display: block;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    span{
+                                        color: #666;
+                                        font-size: 12px;
+                                    }
+                                }   
+                                .goods-pri{
+                                    text-align: center;
+                                    height: 20px;
+                                    line-height: 20px;
+                                    .new-pri{
+                                        color: #fc6628;
+                                        font-size: 12px;
+                                        strong{
+                                            font-weight: 700;
+                                        }
+                                    }
+                                }            
+                            }
+                        }
+                    }
+
                 }
             }
         }
@@ -311,6 +399,12 @@
             height: 68.5px;
             overflow: hidden;
             box-sizing: border-box;
+            .active{
+                background-color:#fff;
+            }
+            .contents{
+                background-color: rgba(248, 247, 247, 0.8);
+            }    
             h4{
                 padding-bottom: 8px;
                 a{
@@ -411,17 +505,10 @@
                 height: 92px;
                 line-height: 92px;
                 width: 300px;
-                // box-sizing: border-box;
-                // margin-right: 10px;
                 .p-list{
                     display: inline-block;
+                    padding-left: 20px;
                     float: left;
-                    .active{
-                        border-bottom-color: #fc6628;
-                        a{
-                            color: #fc6628;
-                        }
-                    }
                     .p-bannerqh{
                         float: left;
                         height: 92px;
@@ -429,26 +516,29 @@
                         padding-bottom: 2px;
                         // text-align: center;
                         margin-right: 23px;
-                        padding: 0px 8px;                    padding-top: 38px;
+                        padding:0 5px;
                         border-bottom: 3px solid transparent;
                         -webkit-transition: all 0.45s;
                         -moz-transition: all 0.45s;
                         -o-transition: all 0.45s;
                         transition: all 0.45s;
-                        // .active{
-                        //     a{
-                        //         color: #fc6628;
-                        //     }
-                        }
+                    }
+                    .active{
+                        border-color: #fc6628;
+                        color: #fc6628;
+                        a{
+                            color: #fc6628;
+                        }    
                     }
                 }
                 a{
                     font-size: 16px;
                     color: #767676;
-                    // display: inline-block;
                 }
+
             }
         }
+    }
     .main-goods{
         width: 1240px;
         margin: 0 auto;
@@ -597,6 +687,9 @@
                                     font-size: 12px;
                                     color: #999;
                                 }
+                                a:hover{
+                                    color: #fc6628;
+                                }
                             }
                         }
                     }
@@ -630,7 +723,7 @@
                 }
             }
         }
-        .footer-botton{
+        .footer-bottom{
             padding-top: 17px;
             padding-bottom: 16px;
             .fb-ul{
@@ -647,6 +740,9 @@
                     color: #5a5453;
                     a{
                         color: #5a5453;
+                    }
+                    a:hover{
+                        color: #000;
                     }
                 }
             }

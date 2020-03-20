@@ -1,7 +1,7 @@
 /*
-* 文件名:main.js
-* 功能:引入js文件
-* 引用方式:
+* 文件名:index.main.js
+* 功能:首页js
+* 引用方式:require["index.main"]
 * author:lisusu
 * Date: 2020-03-13
 */
@@ -31,10 +31,15 @@ require(["index"],function(index){
     
     index.shopCartmove();
     index.hoverheader();
+    index.axonBlade();
+    index.navpicMove();
+    index.navpic02Move();
     index.hovernav();
+    index.hoverfootercenter();
+    index.hoverfooterbottom();
     // index.download();
     index.bannerTab();
-    // index.bannerList();
+    index.bannerList();
     index.picMove();
     index.phoneTab();
 

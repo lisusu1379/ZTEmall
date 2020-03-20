@@ -31,10 +31,16 @@ require(["index"],function(index){
     
     index.shopCartmove();
     index.hoverheader();
+    index.axon();
+    index.blade();
+    index.navpicMove();
+    index.navpic02Move();
     index.hovernav();
+    index.hoverfootercenter();
+    index.hoverfooterbottom();
     // index.download();
     index.bannerTab();
-    // index.bannerList();
+    index.bannerList();
     index.picMove();
     index.phoneTab();
 
